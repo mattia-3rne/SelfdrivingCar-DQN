@@ -30,4 +30,5 @@ class Game:
         SCREEN.blit(text_render, (x, y))
 
     def reset(self):
+        self.track = Track()
         self.car.reset_position(self.track)

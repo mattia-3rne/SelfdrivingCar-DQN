@@ -10,7 +10,6 @@ class Car:
         self.width = 14.142
         self.height = 22.360
         self.color = (200, 15, 15)
-        self.starting_pos = (x, y, 270)
         self.x, self.y = x, y
         self.angle = 270
         self.points = self.get_points()
@@ -71,7 +70,9 @@ class Car:
             self.angle += math.pi / 2
 
     def reset_position(self, track):
-        self.x, self.y, self.angle = self.starting_pos
+        self.x = track.track[0][0]
+        self.y = track.track[0][1]
+        self.angle = 270
         for sensor in self.sensor:
             sensor.update(self, track)
         self.score = 0
