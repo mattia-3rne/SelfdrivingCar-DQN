@@ -6,7 +6,7 @@ from settings import *
 
 class Track:
     def __init__(self):
-        self.width = 40
+        self.width = 50
         self.track = self.init_track()
         self.surface = self.track_surface()
         self.masks = self.track_masks()
