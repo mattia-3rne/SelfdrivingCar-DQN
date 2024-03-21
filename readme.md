@@ -23,6 +23,6 @@ At the beggining agent is exploring new environment, a lot of crashes are expect
 #### After 200 episodes
 After some episodes agent adapts his driving skill to stay on track for longer period of time.
 <div align="center">
-    <img src="images/first_episodes.gif" />
+    <img src="images/200_episode.gif" />
 </div>
 
