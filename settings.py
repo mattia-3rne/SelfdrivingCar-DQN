@@ -7,7 +7,7 @@ pg.font.init()
 SIZE = WIDTH, HEIGHT = 800, 800
 SCREEN = pg.display.set_mode(SIZE)
 FPS = 30
-FONT = pg.font.SysFont("rockwell", 24, bold=True)
+FONT = pg.font.SysFont("Neuland-Inline", 24, bold=True)
 CLOCK = pg.time.Clock()
 
 # Agent settings

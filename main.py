@@ -12,7 +12,7 @@ def main():
     while True:
         CLOCK.tick(FPS)
         fps = str(int(CLOCK.get_fps()))
-        pg.display.set_caption("Selfdriving Car | FPS: " + fps)
+        pg.display.set_caption("Selbstfahrendes Auto | FPS: " + fps)
         game.handle_events()
 
         # Get initial state
@@ -40,8 +40,8 @@ def main():
 
         game.draw()
         game.display_text("Generation", agent.n_games, 15, 15)
-        game.display_text("Highscore", highscore, 15, 40)
-        game.display_text("Score", game.car.score, 15, 65)
+        game.display_text("Höchste Punktzahl", highscore, 15, 40)
+        game.display_text("Punktzahl", game.car.score, 15, 65)
         pg.display.update()
 
 
